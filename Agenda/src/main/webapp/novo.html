@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-mz">
+<head>
+<meta charset="UTF-8">
+<title>Agenda de Contactos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<div>
+				<h2>LOGO</h2>
+			</div>
+			<div>
+				<ul>
+				  <li><a href="#">Contactos</a></li>
+				  <li><a href="#">Eventos</a></li>
+				  <li><a href="#">Calendário</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="wraper">
+			<h1>Criar novo Contacto</h1>
+			<fieldset>
+			<legend>Dados do contacto</legend>
+			<div>
+				<form name="frmContacts" action="registerContact">
+					<table>
+				     <tr>
+				     	<td>
+				     		<input type="text" name="name" placeholder="Nome" class="inputs">
+				     	</td>
+				     </tr>
+				     <tr>
+				     	<td>
+				     		<input type="text" name="phone" placeholder="Telefone" class="inputs">
+				     	</td>
+				     </tr>
+				     <tr>
+				     	<td>
+				     		<input type="email" name="email" placeholder="E-mail" class="inputs">
+				     	</td>
+				     </tr>
+				     <tr>
+				     	<td>
+				     		<a href="main">Voltar</a>
+				     	</td>
+				     	<td>
+				     		<input type="submit" onclick="fieldValidation()" value="Adicionar" class="botao">
+				     	</td>
+				     </tr>
+				    </table>
+				</form>
+			</div>
+			</fieldset>
+		</div>
+	</main>
+	<script type="text/javascript" src="scripts/validator.js"></script>
+</body>
+</html>
